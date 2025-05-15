@@ -120,7 +120,7 @@ footer {
 }
 
 /* Media queries to make images appear for desktops */
-@media only screen and (min-width: 1480px) {
+@media only screen and (min-width: 1750px) {
     .hobby-image-container {
         display: flex;
         justify-content: center;
