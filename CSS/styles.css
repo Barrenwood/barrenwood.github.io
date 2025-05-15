@@ -5,9 +5,8 @@
 }
 
 :root {
-    --color-1: #23022E;
-    --color-2: #573280;  
-    --color-3: #d8d4f2a8;
+    --color-1: #573280;  
+    --color-2: #d8d4f2a8;
 }
 
 body {
@@ -16,7 +15,7 @@ body {
 
 /* Styles for the top area, header and nav */
 header {
-    background-color: var(--color-2);
+    background-color: var(--color-1);
     color: white;
     text-align: center;
     border: 2px black double;
@@ -24,7 +23,7 @@ header {
 }
 
 nav {
-    background-color: var(--color-2);
+    background-color: var(--color-1);
     color: white;
     text-align: center;
     border: 2px black double;
@@ -49,12 +48,12 @@ a:link {
 }
 
 a:hover {
-    background-color: var(--color-3);
+    background-color: var(--color-2);
 }
 
 /* Styles for the Bio section */
 .bio-container {
-    background-color: var(--color-2);
+    background-color: var(--color-1);
     color: white;
     text-align: center;
     border: 2px black double;
@@ -64,17 +63,21 @@ a:hover {
 
 /* Styles for the Qualifications section */
 .qualifications-container {
-    background-color: var(--color-2);
+    background-color: var(--color-1);
     color: white;
     text-align: center;
     border: 2px black double;
     margin-top: 10px;
     font-size: larger;
+}
+
+.qualification-image-container {
+    display: none;
 }
 
 /* Styles for the Hobbies section */
 .hobbies-container {
-    background-color: var(--color-2);
+    background-color: var(--color-1);
     color: white;
     text-align: center;
     border: 2px black double;
@@ -82,11 +85,13 @@ a:hover {
     font-size: larger;
 }
 
-
+.hobby-image-container {
+    display: none;
+}
 
 /* Styles for the Previous Work section */
 .work-container {
-    background-color: var(--color-2);
+    background-color: var(--color-1);
     color: white;
     text-align: center;
     border: 2px black double;
@@ -96,7 +101,7 @@ a:hover {
 
 /* Styles for the Contact section */
 .contact-container {
-    background-color: var(--color-2);
+    background-color: var(--color-1);
     color: white;
     text-align: center;
     border: 2px black double;
@@ -106,10 +111,23 @@ a:hover {
 
 /* Styles for the Footer */
 footer {
-    background-color: var(--color-2);
+    background-color: var(--color-1);
     color: white;
     text-align: center;
     border: 2px black double;
     margin-top: 10px;
     font-size: larger;
+}
+
+/* Media queries to make images appear for desktops */
+@media only screen and (min-width: 1480px) {
+    .hobby-image-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .qualification-image-container {
+        display: flex;
+        justify-content: center;
+    }
 }
