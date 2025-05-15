@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+    
+    document.addEventListener("DOMContentLoaded", function () {
+            printQuery(); // Call function once DOM is ready
+        });
+
+        function printQuery() {
+            var query = window.location.search.substring(1);
+            var vars = query.split("&");
+            var output = "";
+
+            for (var i = 0; i < vars.length; i++) {
+                var pair = vars[i].split("=");
+                output += decodeURIComponent(pair[0]) + ": " + decodeURIComponent(pair[1]) + "<br />";
+            }
+
+            if (output) {
+                document.getElementById("queryOutput").innerHTML = output;
+            } else {
+                document.getElementById("queryOutput").innerHTML = "No form data submitted.";
+            }
+        }
+    </script>
+</head>
+<body>
+    <section class="Thanks">
+        <h1 style="text-align: center;">Thank you for your patronage!</h1>
+        <div id="queryOutput">
+        </div>
+        <h2 style="text-align: center;">Please validate that the above information is correct before your check-in.</h2>
+    </section>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Stay</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a> | <a href="booking.html">Book a Stay</a>
+        </nav>
+        <section class="header_bar">
+            <h1>Thank you for choosing us as your relaxation destination!</h1>
+            <h2>Please fill out the form below to get started with your stay!</h2>
+        </section>
+    </header>
+
+    <section class="form">
+
+        <img src="Images/SunkenSeaRoom1.png" alt="SunkenSeaRoom1" style="float:left; height:227px; width:300px;">
+
+        <img src="Images/SunkenSeaRoom2.png" alt="SunkenSeaRoom2" style="float:right; height:227px; width:300px;">
+
+        <form action="thankyou.html" method="get">
+            <!-- First Name -->
+            <div>
+                <label for="fName">First Name:</label>
+                <input type="text" name="fName" id="fName" placeholder="First Name" required>
+            </div>
+
+            <!-- Last Name -->
+            <div>
+                <label for="lName">Last Name:</label>
+                <input type="text" name="lName" id="lName" placeholder="Last Name" required>
+            </div>
+
+            <!-- Email -->
+            <div>
+                <label for="email">Email Address:</label>
+                <input type="email" name="email" id="email" placeholder="Email Address" required>
+            </div>
+
+            <!-- Check In Date -->
+            <div>
+                <label for="date1">Check-in Date:</label>
+                <input type="date" name="date1" id="date1" required>
+            </div> 
+
+            <!-- Check Out Date -->
+            <div>
+                <label for="date2">Check-out Date:</label>
+                <input type="date" name="date2" id="date2" required>
+            </div>
+
+            <!--Num of Guests-->
+            <div>
+                <label for="guestNum">Number of Guests (Maximum of 10):</label>
+                <input type="number" name="guestNum" id="guestNum" min="1" max="10">
+            </div>
+            <!-- Phone Number -->
+            <div>
+                <label for="phoneNum">Phone Number:</label>
+                <input type="text" name="phoneNum" id="phoneNum" placeholder="Phone Number">
+            </div>
+
+            <!-- Special Rquests -->
+            <div>
+                <label for="requests">Special Requests:</label>
+                <textarea name="requests" id="requests" rows="2" cols="15" placeholder="Leave any requests"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+
+        </form>
+
+    </section>
+</body>
+
+</html>

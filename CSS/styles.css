@@ -1,0 +1,115 @@
+/* Styles for general use */
+* {
+    margin: 0px;
+    padding: 5px;
+}
+
+:root {
+    --color-1: #23022E;
+    --color-2: #573280;  
+    --color-3: #d8d4f2a8;
+}
+
+body {
+    background-color: white;
+}
+
+/* Styles for the top area, header and nav */
+header {
+    background-color: var(--color-2);
+    color: white;
+    text-align: center;
+    border: 2px black double;
+    margin-top: 10px;
+}
+
+nav {
+    background-color: var(--color-2);
+    color: white;
+    text-align: center;
+    border: 2px black double;
+    font-size: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin-top: 5px;
+}
+
+/* Styles for making links look better */
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: skyblue;
+}
+
+a:link {
+    color: skyblue;
+}
+
+a:hover {
+    background-color: var(--color-3);
+}
+
+/* Styles for the Bio section */
+.bio-container {
+    background-color: var(--color-2);
+    color: white;
+    text-align: center;
+    border: 2px black double;
+    margin-top: 10px;
+    font-size: larger;
+}
+
+/* Styles for the Qualifications section */
+.qualifications-container {
+    background-color: var(--color-2);
+    color: white;
+    text-align: center;
+    border: 2px black double;
+    margin-top: 10px;
+    font-size: larger;
+}
+
+/* Styles for the Hobbies section */
+.hobbies-container {
+    background-color: var(--color-2);
+    color: white;
+    text-align: center;
+    border: 2px black double;
+    margin-top: 10px;
+    font-size: larger;
+}
+
+
+
+/* Styles for the Previous Work section */
+.work-container {
+    background-color: var(--color-2);
+    color: white;
+    text-align: center;
+    border: 2px black double;
+    margin-top: 10px;
+    font-size: larger;
+}
+
+/* Styles for the Contact section */
+.contact-container {
+    background-color: var(--color-2);
+    color: white;
+    text-align: center;
+    border: 2px black double;
+    margin-top: 10px;
+    font-size: larger;
+}
+
+/* Styles for the Footer */
+footer {
+    background-color: var(--color-2);
+    color: white;
+    text-align: center;
+    border: 2px black double;
+    margin-top: 10px;
+    font-size: larger;
+}

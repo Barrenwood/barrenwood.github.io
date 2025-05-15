@@ -1,0 +1,75 @@
+:root {
+    --color-1: #092327;
+    --color-2: #0b4351;
+    --color-3: #00A9A5;
+    --color-4: #4E8098;
+    --color-5: #90C2E7;
+}
+body {
+    background-color: var(--color-1);
+}
+
+nav {
+    text-align: center;
+    background-color: var(--color-3);
+    border: 2px var(--color-4) double;
+}
+
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: var(--color-1);
+}
+a:link {
+    color: var(--color-1)
+}
+a:hover {
+    background-color: var(--color-5);
+}
+
+.header_bar {
+    background-color: var(--color-3);
+    color: var(--color-1);
+    border: 2px var(--color-4) double;
+    text-align: center;
+}
+
+.description {
+    background-color: var(--color-3);
+    color: var(--color-1);
+    border: 2px var(--color-4) double;
+    text-align: center;
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.center {
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.form {
+    background-color: var(--color-3);
+    color: var(--color-1);
+    border: 2px var(--color-4) double;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+div {
+    text-align: center;
+    padding-bottom: 5px;
+    padding-left: 30px;
+}
+
+.Thanks {
+    background-color: var(--color-3);
+    color: var(--color-1);
+    border: 2px var(--color-4) double;
+    margin-top: 5px;
+    border-radius: 5px;
+}

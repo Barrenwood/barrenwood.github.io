@@ -1,0 +1,180 @@
+/* Styles for general use */
+* {
+    margin: 0px;
+    padding: 5px;
+}
+
+:root {
+    --color-1: #79B473;
+    --color-2: #365D32;
+    --color-3: #362007;
+}
+
+body {
+    background-color: var(--color-1);
+}
+
+/* Styles for the top area, header and nav */
+header {
+    background-color: var(--color-2);
+    color: white;
+    text-align: center;
+    border: 2px white double;
+    margin: 10px;
+}
+
+nav {
+    background-color: var(--color-2);
+    color: white;
+    text-align: center;
+    border: 2px white double;
+    font-size: 25px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Styles for making links look better */
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: yellow
+}
+
+a:link {
+    color: yellow
+}
+
+a:hover {
+    background-color: var(--color-1);
+}
+
+/* Styles for testimonials */
+.testimonial-box {
+    background-color: var(--color-2);
+    color: white;
+    text-align: center;
+    border: 2px white double;
+    margin: 10px;
+    display: inline-block;
+}
+
+/* Styles to make the Before and After areas operate and look properly */
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.BA-images img {
+    height: 350px;
+    width: 550px;
+    display: inline-block;
+}
+
+.BA-container {
+    background-color: var(--color-2);
+    margin: 5px;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    border: 2px white double;
+}
+
+.hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.BA-images:hover .hover-image {
+    opacity: 1;
+}
+
+.BA-images {
+    position: relative;
+}
+
+/* Styles for the biography section */
+.bio-container {
+    background-color: var(--color-2);
+    color: white;
+    text-align: center;
+    border: 2px white double;
+    height: 215px;
+    margin: 10px;
+    display: flex;
+    height: 700px;
+}
+
+.bio-container img {
+    display: inline-block;
+    width: 600px;
+    margin: 5px;
+}
+
+.bio-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    max-width: 600px;
+}
+
+/* Styles for the footers */
+footer {
+    background-color: var(--color-3);
+    margin: 5px;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    border: 2px var(--color-2) double;
+}
+
+/* Styles for the FAQ areas */
+.FAQ-container {
+    background-color: var(--color-2);
+    color: white;
+    text-align: center;
+    border: 2px white double;
+    margin: 10px;
+    display:inline-block;
+    padding-bottom: 10px;
+}
+
+.FAQ-section {
+    display: flex;
+}
+
+/* Styles for the Contact form */
+.form-container {
+    background-color: var(--color-2);
+    color: white;
+    text-align: center;
+    border: 2px white double;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+/* Media queries to adjust site for mobile screens */
+@media only screen and (max-width: 480px) {
+    .header-images{
+        display: none;
+    }
+    .BA-container {
+        display: none;
+    }
+    .bio-image {
+        display: none;
+    }
+    .header-email {
+        display: none;
+    }
+}
